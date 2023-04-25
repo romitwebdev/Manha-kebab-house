@@ -8,7 +8,12 @@ const Menus = () => {
                     Our Menus
                 </h1>
                 <div className="img-holder">
-                    <img src="menu.jpg" alt="" className="menus_image w-100" />
+                    <img
+                        src="menu.jpg"
+                        alt=""
+                        className="menus_image w-100"
+                        loading="lazy"
+                    />
                     <div className="social_icon_holder">
                         <div className="single-icons">
                             <a

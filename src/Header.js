@@ -32,6 +32,7 @@ const Header = () => {
                     alt=""
                     className="hero_img"
                     style={{ height: "100%", width: "100%" }}
+                    loading="lazy"
                 />
             </div>
         </>

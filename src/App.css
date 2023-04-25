@@ -155,7 +155,7 @@ footer {
 
 @media screen and (max-width: 1080px) {
     .tagline {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
     }
 
     .menu_header {
@@ -175,7 +175,7 @@ footer {
 
 @media screen and (max-width: 912px) {
     .tagline {
-        font-size: 4rem;
+        font-size: 3.7rem;
     }
 
     .sub-tagline {
@@ -211,11 +211,11 @@ footer {
 
 @media screen and (max-width: 850px) {
     .tagline {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .sub-tagline {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .menu_header {
@@ -243,11 +243,11 @@ footer {
 
 @media screen and (max-width: 768px) {
     .tagline {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     .sub-tagline {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .menu_header {
@@ -276,11 +276,11 @@ footer {
 
 @media screen and (max-width: 650px) {
     .tagline {
-        font-size: 2.3rem;
+        font-size: 1.9rem;
     }
 
     .sub-tagline {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .menu_header {
@@ -308,17 +308,17 @@ footer {
 }
 @media screen and (max-width: 590px) {
     .tagline {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width: 540px) {
     .tagline {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .sub-tagline {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .menu_header {
@@ -356,11 +356,11 @@ footer {
 
 @media screen and (max-width: 480px) {
     .tagline {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .sub-tagline {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .menu_header {
@@ -398,11 +398,11 @@ footer {
 
 @media screen and (max-width: 428px) {
     .tagline {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .sub-tagline {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .menu_header {
@@ -440,11 +440,11 @@ footer {
 
 @media screen and (max-width: 390px) {
     .tagline {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .sub-tagline {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .menu_header {
@@ -492,7 +492,7 @@ footer {
     }
 
     .sub-tagline {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 
     .menu_header {
@@ -534,11 +534,11 @@ footer {
 
 @media screen and (max-width: 320px) {
     .tagline {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .sub-tagline {
-        font-size: 0.4rem;
+        font-size: 0.3rem;
     }
 
     .menu_header {
@@ -579,12 +579,16 @@ footer {
 }
 
 @media screen and (max-width: 290px) {
+    .brand_title {
+        display: none;
+    }
+
     .tagline {
         font-size: 0.8rem;
     }
 
     .sub-tagline {
-        font-size: 0.3rem;
+        font-size: 0.4rem;
     }
 
     .menu_header {
