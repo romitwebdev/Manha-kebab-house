@@ -65,7 +65,7 @@
 .link_icons_holder {
     position: fixed;
     top: 50%;
-    right: 2rem;
+    right: 0;
     transform: translate(0%, -50%);
     z-index: 1;
 }
@@ -169,7 +169,7 @@ footer {
     }
 
     .link_icons_holder {
-        right: 1.5rem;
+        right: 0;
     }
 }
 
@@ -205,7 +205,7 @@ footer {
     }
 
     .link_icons_holder {
-        right: 0.5rem;
+        right: 0;
     }
 }
 
