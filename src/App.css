@@ -411,7 +411,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 428px) {
     .tagline {
         font-size: 1.4rem;
     }
