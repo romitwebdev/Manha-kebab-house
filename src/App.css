@@ -1,38 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
 .App {
-  text-align: center;
+    text-align: center;
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* nav brand */
+.brand_name {
+    cursor: pointer;
+}
+.brand_title {
+    font-family: Italianno, sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* hero image */
+.hero_img {
+    object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* tagline */
+.tagline_holder {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.App-link {
-  color: #61dafb;
+.tagline,
+.sub-tagline {
+    font-size: 6rem;
+    font-weight: 800;
+    color: rgb(225, 179, 30);
+    text-shadow: 1px 2px 7px rgb(0, 0, 0);
+    letter-spacing: 0.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-tagline {
+    font-size: 2rem;
+    font-weight: 400;
+    color: whitesmoke;
+    font-style: italic;
+    text-shadow: none;
+    letter-spacing: none;
+    margin-bottom: 1.5rem;
+}
+
+/* header menu button */
+.btn_menu {
+    font-size: 4rem;
+    animation-name: btn_animation;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+/* link icons */
+.link_icons_holder {
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+    transform: translate(0%, -50%);
+    z-index: 1;
+}
+
+.icon {
+    font-size: 3rem;
+    color: rgb(25, 151, 113);
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
+.img-icon {
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
+.icon:hover,
+.img-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* menu header */
+
+.menu_header {
+    font-size: 6rem;
+    font-weight: 800;
+    background-color: black;
+    color: white;
+}
+
+.img-holder {
+    position: relative;
+}
+/* social icons */
+.social_icon_holder {
+    position: absolute;
+    top: 6.5%;
+    left: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.group-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.social_icon {
+    width: auto;
+    height: 4rem;
+}
+
+.social_icon.fb {
+    height: 6rem;
+}
+
+/* footer */
+footer {
+    color: white;
+    padding: 2.5rem 0;
+    font-size: 1.4rem;
+}
+
+/* menu button animation */
+
+@keyframes btn_animation {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+}
+
+/* mobile devices */
+
+@media screen and (max-width: 1080px) {
+    .tagline {
+        font-size: 4.5rem;
+    }
+
+    .menu_header {
+        font-size: 5rem;
+    }
+
+    .social_icon_holder {
+        top: 5.5%;
+        left: 22%;
+        gap: 2rem;
+    }
+
+    .link_icons_holder {
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .tagline {
+        font-size: 4rem;
+    }
+
+    .sub-tagline {
+        font-size: 2rem;
+    }
+
+    .menu_header {
+        font-size: 4rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 2.7rem;
+    }
+
+    .social_icon.fb {
+        height: 4.5rem;
+    }
+
+    .social_icon_holder {
+        top: 6.3%;
+        left: 22%;
+        gap: 2rem;
+    }
+    .group-icons {
+        gap: 1.4rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .tagline {
+        font-size: 3.5rem;
+    }
+
+    .sub-tagline {
+        font-size: 1.8rem;
+    }
+
+    .menu_header {
+        font-size: 4rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 2.7rem;
+    }
+
+    .social_icon.fb {
+        height: 4rem;
+    }
+
+    .social_icon_holder {
+        top: 6.3%;
+        left: 20%;
+        gap: 2rem;
+    }
+    .group-icons {
+        gap: 1.4rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tagline {
+        font-size: 3rem;
+    }
+
+    .sub-tagline {
+        font-size: 1.6rem;
+    }
+
+    .menu_header {
+        font-size: 3.5rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 2rem;
+    }
+
+    .social_icon.fb {
+        height: 3.3rem;
+    }
+
+    .social_icon_holder {
+        top: 7.1%;
+        left: 25%;
+        gap: 2.7rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .group-icons {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tagline {
+        font-size: 2.3rem;
+    }
+
+    .sub-tagline {
+        font-size: 1.2rem;
+    }
+
+    .menu_header {
+        font-size: 3.2rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 2rem;
+    }
+
+    .social_icon.fb {
+        height: 3.3rem;
+    }
+
+    .social_icon_holder {
+        top: 6.5%;
+        left: 20%;
+        gap: 2rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .group-icons {
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .tagline {
+        font-size: 2rem;
+    }
+
+    .sub-tagline {
+        font-size: 1rem;
+    }
+
+    .menu_header {
+        font-size: 3rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 2rem;
+    }
+
+    .social_icon.fb {
+        height: 3.3rem;
+    }
+
+    .social_icon_holder {
+        top: 6%;
+        left: 17%;
+        gap: 1.4rem;
+    }
+
+    .icon {
+        font-size: 1.7rem;
+    }
+
+    .img-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .group-icons {
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tagline {
+        font-size: 1.8rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.8rem;
+    }
+
+    .menu_header {
+        font-size: 2.5rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 1.6rem;
+    }
+
+    .social_icon.fb {
+        height: 3.2rem;
+    }
+
+    .social_icon_holder {
+        top: 6%;
+        left: 20%;
+        gap: 1.4rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .img-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .group-icons {
+        gap: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .tagline {
+        font-size: 1.4rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.6rem;
+    }
+
+    .menu_header {
+        font-size: 2.5rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 1.4rem;
+    }
+
+    .social_icon.fb {
+        height: 2.7rem;
+    }
+
+    .social_icon_holder {
+        top: 5.5%;
+        left: 20%;
+        gap: 1.2rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+
+    .img-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .group-icons {
+        gap: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .tagline {
+        font-size: 1.3rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.5rem;
+    }
+
+    .menu_header {
+        font-size: 2.5rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 1.4rem;
+    }
+
+    .social_icon.fb {
+        height: 2.7rem;
+    }
+
+    .social_icon_holder {
+        top: 5.5%;
+        left: 19%;
+        gap: 0.5rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .icon {
+        font-size: 1.7rem;
+    }
+
+    .img-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .group-icons {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .brand_title {
+        font-size: 2.3rem;
+    }
+    .btn_menu {
+        padding: 0;
+    }
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.4rem;
+    }
+
+    .menu_header {
+        font-size: 2rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 1.2rem;
+    }
+
+    .social_icon.fb {
+        height: 2.7rem;
+    }
+
+    .social_icon_holder {
+        top: 5.5%;
+        left: 19%;
+        gap: 0.4rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .icon {
+        font-size: 1.7rem;
+    }
+
+    .img-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .group-icons {
+        gap: 0.4rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.4rem;
+    }
+
+    .menu_header {
+        font-size: 1.8rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 1rem;
+    }
+
+    .social_icon.fb {
+        height: 2.4rem;
+    }
+
+    .social_icon_holder {
+        top: 5.5%;
+        left: 19%;
+        gap: 0.4rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .img-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .group-icons {
+        gap: 0.4rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .tagline {
+        font-size: 0.8rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.3rem;
+    }
+
+    .menu_header {
+        font-size: 1.6rem;
+    }
+
+    .social_icon {
+        width: auto;
+        height: 0.8rem;
+    }
+
+    .social_icon.fb {
+        height: 1.8rem;
+    }
+
+    .social_icon_holder {
+        top: 5.5%;
+        left: 19%;
+        gap: 0.4rem;
+    }
+
+    .link_icons_holder {
+        right: 1rem;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .img-icon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .group-icons {
+        gap: 0rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+/* mobile landscape */
+
+@media screen and (max-height: 360px) and (orientation: landscape) {
+    .icon {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .img-icon {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 0.5;
+    }
 }
