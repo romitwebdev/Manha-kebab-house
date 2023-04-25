@@ -318,6 +318,11 @@ footer {
         gap: 0.8rem;
     }
 }
+@media screen and (max-width: 590px) {
+    .tagline {
+        font-size: 2.1rem;
+    }
+}
 
 @media screen and (max-width: 540px) {
     .tagline {
